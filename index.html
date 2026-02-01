@@ -24,13 +24,13 @@
     }
 
     h1 {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
       color: #333;
     }
 
     .buttons {
       position: relative;
-      height: 80px;
+      height: 90px;
     }
 
     button {
@@ -60,19 +60,25 @@
       font-size: 14px;
       color: #777;
     }
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+      margin-top: 25px;
+    }
   </style>
 </head>
 <body>
 
   <div class="card" id="card">
-    <h1>Stephany,<br>will you be my valentine? 💖</h1>
+    <h1>Stephany,<br>will you be my Valentine? 💖</h1>
 
     <div class="buttons">
       <button class="yes" onclick="yesClicked()">Yes 💕</button>
       <button class="no" id="noBtn">No</button>
     </div>
 
-    <div class="caption">“No” seems a bit shy</div>
+    <div class="caption">“No” seems a bit shy 😈</div>
   </div>
 
   <script>
@@ -93,7 +99,10 @@
     });
 
     function yesClicked() {
-      card.innerHTML = "<h1>Yay!!! 🥰❤️<br>Happy Valentine’s Day!</h1>";
+      card.innerHTML = `
+        <h1>Yay!!! 🥰❤️<br>Happy Valentine’s Day</h1>
+        <img src="us.jpeg" alt="Us together">
+      `;
     }
   </script>
 
